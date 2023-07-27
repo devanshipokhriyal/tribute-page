@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Tribute Page </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #352420;
+      font-family: 'Bebas Neue', sans-serif;
+
+      /* background-image: linear-gradient(to left , red 0%, red 50%,yellow 50%, yellow 100%); */
+
+      /* background: linear-gradient(
+        to bottom,
+        red 0%,
+        red 30%,                                                                 
+        yellow 30%,
+        yellow 100%
+    );
+    height: 100vh; */
+    }
+
+    .one {
+      /* background: aquamarine; */
+      height: 50%;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      /*justify center to center the elements of nav bar --> */
+      align-items: center;
+      height: 45px;
+      background-color: #FFCCAF;
+    }
+
+    nav ul {
+      gap: 149px;
+      display: flex;
+
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0, 23px;
+      font-size: 25px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+
+    }
+
+    nav ul li a:hover {
+      color: rgb(107, 27, 160);
+      font-size: large;
+    }
+
+    hr {
+      border: 0;
+      background: #a99696;
+      height: 1px;
+      margin: 0px 0px;
+      width: 100%;
+    }
+
+    /* background-color: #000000;} */
+    /* .one{
+    
+    background: purple;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} */
+    .flex-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    .flex-box {
+      background-color: #FFCCAF;
+      width: 100%;
+      height: 66rem;
+    }
+
+
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 45px 0;
+    }
+
+    .firstsection>div {
+      /* we use > div so that this css only applies to the first div */
+      width: 30%;
+    }
+
+    .leftsection img {
+      padding: 71px 0px;
+      margin: 59px 0px;
+
+
+    }
+
+
+
+    .rightsection {
+      margin-top: -32px;
+      width: 130%;
+      font-size: 4.88rem;
+      margin: center;
+
+    }
+
+
+    .purple {
+      color: brown;
+    }
+
+    .quote {
+      margin: 0%;
+      padding: 0px;
+    }
+
+    .quote div {
+      text-align: center;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 25px;
+
+    }
+
+    .main>div {
+      width: 65%;
+      text-align: center;
+    }
+
+    main div {
+      margin: 61px 315px;
+      color: antiquewhite;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: left;
+      width: 55%;
+      font-size: 19px;
+    }
+
+    main pre {
+      color: antiquewhite;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    h2 {
+      color: #FFCCAF;
+      text-align: left;
+      margin: 71px 0px;
+      padding: 45px 314px;
+      font-size: 2.5rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .logo {
+      margin: 12px 42rem;
+      padding: 52px 0px;
+      height: 52px;
+    }
+
+    .pic {
+      display: flex;
+    }
+
+
+    .logo div {
+      align-items: center;
+      margin: 0px, 0px;
+      color: #FFCCAF;
+      padding: 9px 5px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo img {
+      cursor: pointer;
+      height: 30px;
+      width: auto;
+
+    }
+
+    pre {
+      margin: 1px 320px;
+      padding: 0px 4px;
+      font-size: 19px;
+    }
+
+    footer {
+      background-color: #FFCCAF;
+
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer>div {
+      width: 233px;
+    }
+
+    footer .footer-rights {
+      color: grey;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    .footer ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0px 24px;
+      gap: 257px;
+      align-items: center;
+      margin: 3px -14rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .footer ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer-first .ul a {
+      text-decoration: none;
+      color: #352420;
+
+    }
+
+    footer-first ul a:hover {
+      color: rgb(107, 27, 160);
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr>
+
+  <div class="flex-container">
+    <div class="flex-box">
+
+      <section class="firstsection">
+        <div class="leftsection">
+          <img src="img-1.PNG">
+
+        </div>
+
+        <div class="rightsection">A tribute to the living legend <span class="purple">REKHA</span><br>
+          <span class="quote">
+            <div> "When you savour and relish every moment,
+              then you learn the art of preserving yourself."</div>
+          </span>
+        </div>
+      </section>
+
+    </div>
+  </div>
+  <div class="logo">
+    <div>07 JUL, 2023</div><br>
+    <div class="pic">
+      <div><a href="/"><img src="fb.png"></a></div>
+      <div><a href="/"><img src="insta.png"></a></div>
+      <div><a href="/"><img src="twitter.png"></a></div>
+    </div>
+  </div>
+  <main>
+    <h2>About </h2>
+    <div>Her performance as an actor has been praised as multi coloured, multi dimensional, bindaas and par excellence.
+      Rekha was born on October 10, 1954, to Jemini Ganeshan and Pushpavati. Both her parents were very well established
+      names of the South Indian film industry.When we talk about elegance and ethereal beauty, there is no one like
+      iconic Rekha, and when it comes to her saree collection, she is unmatchable.
+      You should refer to the veteran actress’s lookbook when in doubt about sarees, and her looks will always leave you
+      impressed.</div><br>
+
+    <h2>Awards and Nominations</h2><br>
+    <pre>
+          <h3>Filmfare Awards</h3>
+       	           1981-Best Actress (Khubsoorat)
+      	           1989-best Actress (Khoon Bhari Maang)
+                   1997-Best Supporting Actress (Khiladiyon Ka Khiladi)
+                   2003-Lifetime Achievement Award
+          
+          <h3>National Awards</h3>
+          	       1981-Best (Actress  Umrao Jaan)
+          <h3>IIFA</h3>
+                   2003-Samsung Style Diva Award
+                   2012- Lifetime Achievement Award
+
+          </pre>
+    <h2>Others on REKHA</h2><br>
+    <div>Rekha's status in the film industry has been discussed in light of her change over the years, screen persona,
+      and performances. In 1986, The Illustrated Weekly of India wrote: "There has never been anyone quite like Rekha.
+      Tempestuous woman. Troublemaker extraordinary. A woman once known, never quite forgotten. And an accomplished
+      actress who can often startle you with a truly great performance." Writing for The Tribune, Mukesh Khosla was
+      impressed with her transformation from "the giggling village belle in Saawan Bhadon to one of country's reigning
+      actresses". Hindustan Times described her physical change and loss of weight as "one of cinema's and perhaps real
+      life's most dramatic transformations," arguing that "Rekha morphed from an overweight, dark ordinary girl into a
+      glamorous and beautiful enigma". According to critic Omar Qureshi, "the term diva (in India) was coined for
+      Rekha." Mira Nair, who directed Rekha in Kama Sutra (1997), likens her to a "Jamini Roy painting" and says, "Like
+      Marilyn Monroe is shorthand for sex, Rekha is shorthand for charisma". Filmmaker Sanjay Leela Bhansali labels her
+      the "last of the great stars".
+
+      Respected for her acting prowess, Rekha has been described by critics as one of Hindi cinema's finest actresses.
+      Filmfare described her acting style, writing that in terms of "style, sexiness or sheer onscreen presence, she's
+      unparalleled" and arguing that she is
+      "a fierce, raw, flinty performer with unbridled honesty. Her acting isn't gimmicky." Critic Khalid Mohamed
+      commends her technical control: "She knows how
+      to give and to what degree. She has all that it takes to be a director. There is a kind of vulnerability in her
+      control. She explores when she is acting."
+      Shyam Benegal, who directed her in two movies, believes she is "a director's actress". M.L. Dhawan from The
+      Tribune wrote, "Rekha's flowering as an actress
+      post Ghar and Khubsoorat climaxed in Umrao Jaan. As a tragic courtesan she gave a performance of quality artistry,
+      adopting a much-admired huskiness and
+      despondency of tone. Rekha communicated much with a delicately raised eyebrow". In 2010, Filmfare included two of
+      her performances—from Khubsoorat (1980)
+      and Umrao Jaan (1981)—in their list of "80 Iconic Performances". Her work in the latter was included on Forbes
+      India's list of "25 Greatest Acting Performances
+      of Indian Cinema". In 2011, Rediff listed her as the ninth-greatest Indian actress of all time, noting, "It's hard
+      not to be bowled over by Rekha's longevity, or her ability
+      to reinvent herself... the actress took on a man's job and did it stunningly well, holding her own against all the
+      top actors and being remembered despite them."
+      In 2023, Rajeev Masand listed her in a similar list by India Today.</div><br>
+
+    <hr>
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright &copy tributepage.com | All rights reserved
+    </div>
+  </footer>
+</body>
+
+
+</html>
